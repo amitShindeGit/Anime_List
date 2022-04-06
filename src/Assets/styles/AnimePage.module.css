@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1f1f1f;
+  /* background-color: #fff; */
+}
+
+.main {
+  display: flex;
+  margin: 1rem auto;
+  max-width: 72rem;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #a3a1a3;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.titleName {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.7rem;
+}
+
+.rating {
+  font-family: "Roboto";
+  font-size: 24px;
+  letter-spacing: 2.00004px;
+}
+
+.star {
+  color: rgb(245, 197, 24);
+}
+
+.rating_st {
+  margin-bottom: 0.5rem;
+}
+
+.image {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: auto;
+  height: 30rem;
+  object-fit: fill;
+  padding: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+img:hover {
+  filter: brightness(90%);
+}
+
+.imgBanner {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.img2 {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 52rem;
+}
+
+.img_desc {
+  position: relative;
+}
+
+.imgDescLayer {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.img_desc:hover .imgDescLayer {
+  opacity: 1;
+  visibility: visible;
+}
+
+.description {
+  font-family: "Roboto";
+  text-align: justify;
+  color: #fff;
+  width: 70%;
+  border-bottom: 1px solid #4c4c4c;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.descriptionDir {
+  font-family: "Roboto";
+  color: #fff;
+  width: 70%;
+  font-size: 16px;
+  border-bottom: 1px solid #4c4c4c;
+  line-height: 24px;
+  letter-spacing: 0.14992px;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+
+.descriptionPro {
+  display: flex;
+  flex-direction: row;
+  font-family: "Roboto";
+  color: #fff;
+  width: 70%;
+  font-size: 16px;
+  border-bottom: 1px solid #4c4c4c;
+  line-height: 24px;
+  letter-spacing: 0.14992px;
+  font-weight: 500;
+  padding: 1rem 0;
+}
+/* 
+ .uol {
+  list-style: none;
+  margin: 1rem 0 0 1rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+ .lii {
+  float: left;
+  margin-right: 0.5rem;
+  color: #5799e2;
+} */
